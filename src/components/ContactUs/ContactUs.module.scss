@@ -1,0 +1,155 @@
+@import '../../Styles/Constants.scss';
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    background-color: $white;
+
+    .container {
+        flex-direction: column;
+        gap: 4rem;
+
+            @media (max-width: $sm),
+            (max-width: $md) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4rem;
+            }
+
+        .footer {
+
+            @media (max-width: $sm),
+            (max-width: $md) {
+                flex-direction: column;
+                gap: 4rem;
+            }
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .logoSection {
+                flex: 1;
+
+               @media (max-width: $sm){
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+               }
+                img {
+                    max-width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+            }
+
+            .contactSection {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 1rem;
+
+                @media (max-width: $sm){
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 1rem;
+                }
+
+                h1 {
+                    color: black;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    word-spacing: 1px;
+                }
+            }
+
+            .socialMedia {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                @media (max-width: $sm){
+                    .socialText{
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                    }
+                }
+
+                .mediaIcons {
+                    @media (max-width: $sm) {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        gap: 1.2rem;
+                    }
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 1.2rem;
+
+                    a {
+                        @media (max-width: $sm) {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: solid 1px $secondary-white;
+                            border-radius: 50%;
+                            padding: 7px;
+                            height: 45px;
+                            width: 45px;
+                            background: $white;
+                            transition: all 300ms ease;
+                            box-shadow: rgba(0 0 0 / 5%) -3px 11px 13px 0px;
+                        }
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: solid 1px $secondary-white;
+                        border-radius: 50%;
+                        padding: 8px;
+                        height: 45px;
+                        width: 45px;
+                        color: $primary;
+                        background: $white;
+                        transition: all 300ms ease;
+                        box-shadow: rgba(0 0 0 / 5%) -3px 11px 13px 0px;
+
+
+                        &:hover {
+
+                            @media (max-width: $sm) {
+                                border: solid 1px white;
+                                border-radius: 50%;
+                                padding: 8px;
+                                height: 45px;
+                                width: 45px;
+                                color: $white;
+                                background: $primary;
+                            }
+
+                            border: solid 1px white;
+                            border-radius: 50%;
+                            padding: 8px;
+                            height: 45px;
+                            width: 45px;
+                            color: $white;
+                            background: $primary;
+                        }
+
+                    }
+
+                }
+            }
+
+        }
+    }
+}

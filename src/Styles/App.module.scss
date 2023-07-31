@@ -1,0 +1,9 @@
+@import './Constants.scss';
+
+.container{
+    overflow-x: clip;
+    position: relative;
+    color: inherit;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+}

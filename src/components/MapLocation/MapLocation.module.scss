@@ -1,0 +1,16 @@
+@import '../../Styles/Constants.scss';
+
+.wrapper{
+    overflow: hidden;
+    position: relative;
+    background: whitesmoke;
+
+    .container{
+        flex-direction: column;
+        gap: 2rem; 
+
+        h1{
+            margin-bottom: 20px;
+        }
+    }
+}

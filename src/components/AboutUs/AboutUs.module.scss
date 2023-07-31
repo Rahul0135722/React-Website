@@ -1,0 +1,21 @@
+@import '../../Styles/Constants.scss';
+
+.wrapper{
+    overflow: hidden;
+    position: relative;
+    background: white;
+
+    .container{
+       flex-direction: column;
+
+       .aboutContent{
+          font-size: 15px;
+          font-weight: 500;
+          text-align: justify;
+          letter-spacing: 1px;
+          word-spacing: 1.2px;
+          line-height: 2rem;
+        }
+    }
+
+}

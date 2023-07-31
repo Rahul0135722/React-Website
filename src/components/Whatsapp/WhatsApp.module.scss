@@ -1,0 +1,77 @@
+@import '../../Styles/Constants.scss';
+
+.wrapper {
+    overflow: hidden;
+
+    .container {
+        position: relative;
+
+        .mobile {
+            a {
+                img {
+
+                    @media (max-width: $sm) {
+                        position: fixed;
+                        bottom: 8rem;
+                        right: .5rem;
+                        max-width: 45px;
+                        cursor: pointer;
+                        z-index: 1;
+                    }
+                    position: fixed;
+                    bottom: 9rem;
+                    right: 1rem;
+                    max-width: 70px;
+                    cursor: pointer;
+                    z-index: 1;
+                }
+
+                span {
+
+                    @media (max-width: $sm) {
+                        position: fixed;
+                        bottom: 6.5rem;
+                        right: .6rem;
+                        font-size: 14px;
+                        cursor: pointer;
+                        z-index: 1;
+                        color: $black;
+                        font-weight: 500;
+                    }
+                    position: fixed;
+                    bottom: 7.5rem;
+                    right: 1.6rem;
+                    font-size: 14px;
+                    cursor: pointer;
+                    z-index: 1;
+                    color: $black;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .whatsapp {
+            a {
+                img {
+
+                    @media (max-width: $sm) {
+                        position: fixed;
+                        bottom: 3rem;
+                        right: .4rem;
+                        max-width: 50px;
+                        cursor: pointer;
+                        z-index: 1;
+
+                    }
+
+                    position: fixed;
+                    bottom: 2rem;
+                    right: 1rem;
+                    max-width: 80px;
+                    cursor: pointer;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,151 @@
+@import '../../Styles/Constants.scss';
+
+.wrapper {
+    overflow: hidden;
+    background: $bg-Primary;
+    flex-wrap: wrap;
+    background-image: url('../../assets/Images/bgcar1.jpg');
+    background-position-y: center;
+    background-size: cover;
+    object-fit: cover;
+    margin-top: 110px;
+    transition:  all 300ms ease;
+
+    @media (max-width: $sm),
+        (max-width: $md) {
+            margin-top: 100px;
+        }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        opacity: 0.7;
+        height: 100%;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+
+        @media (max-width: $sm),
+        (max-width: $md) {
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .heroSection {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .headText {
+                color: white;
+            }
+
+            .secondText {
+
+                @media (max-width: $sm),
+                (max-width: $md) {
+                    width: 100%;
+                }
+
+                width: 100%;
+                color: white;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                word-spacing: 1px;
+                line-height: 1.5rem;
+                text-align: justify;
+            }
+
+        }
+
+        .rentForm {
+            flex-direction: column;
+
+            @media (max-width: $sm),
+            (max-width: $md) {
+                width: 100%;
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .bookingHead {
+                color: $primary;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                border: solid 2px whitesmoke;
+                padding: 1.5rem;
+                background: $bg-Primary;
+                box-shadow: 02px 21px 13px rgba(0, 0, 0, 13%);
+                border-radius: 20px;
+
+
+                .formInputs {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    label {
+                        align-self: flex-start;
+                    }
+                }
+
+                label {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                input {
+                    width: 300px;
+                    height: 35px;
+                    padding: 0 15px;
+                    outline: none;
+                    border: solid 2px $primary;
+                    cursor: pointer;
+                }
+
+                select {
+                    width: 300px;
+                    height: 35px;
+                    padding: 0 15px;
+                    outline: none;
+                    border: solid 2px $primary;
+                    cursor: pointer;
+                }
+
+                .bookNowBtn {
+                    width: 300px;
+                    color: $white;
+                    padding: 8px 15px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    outline: none;
+                    border: none;
+                    background-color: $primary;
+                    border-radius: 7px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
